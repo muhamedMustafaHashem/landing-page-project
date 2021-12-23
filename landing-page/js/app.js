@@ -125,4 +125,3 @@ function SmoothScrollToSection() {
 buildNav();
 // Scroll to section on link click
 SmoothScrollToSection();
-// Set sections as active
