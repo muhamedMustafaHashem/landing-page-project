@@ -1,13 +1,50 @@
-# Landing Page Project
+# landing page project
+
+this project we build landing page with multiple section.the navbar used in this page generated dynamically.the scroll into section buil
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+- [content](#content)
+- [Features](#Features)
+- [Lessons_Learned](#Lessons_Learned)
+- [language_used](#language_used)
+- [Optimizations](#Optimizations)
+- [Feedback](#Feedback)
+- [Author](#Author)
 
-## Instructions
+## content
+- header that contain navbar  to navigate to section in the page 
+- it contain four section of content
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## Features
 
-To get started, open `js/app.js` and start building out the app's functionality
+- dynamically generating navBar
+- responsive design
+- smooth section scroll
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+## Lessons_Learned
+
+-  how to link javascript file to the HTML file.  
+-  how to build section in HTML.
+-  build navbar dynamically with javascript.
+-  how to scroll into page smoothly to enhance the user experiance
+-  enhance the performance of the page and testing it.
+
+## language_used
+
+- Html
+- css
+- javascript
+
+## Optimizations
+
+- browser minimized reflow
+- performance optimized
+
+## Feedback
+
+If you have any feedback, please reach out to us at mohamedsror2356@gmail.com
+
+## Author
+
+- muhamed mustafa abdul Azim
