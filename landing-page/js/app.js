@@ -102,8 +102,8 @@ function SmoothScrollToSection() {
       clicked.preventDefault();
       const att = clicked.target.getAttribute("data-nav");
       const att1 = clicked.target.getAttribute("href");
+      // loop to add smoothscroll behavior to the section with same data attribute or of the same href attribute.
       document.querySelectorAll("section").forEach((section) => {
-        console.log(section.id);
         if (
           section.getAttribute("data-nav") == att ||
           "#" + section.id == att1
