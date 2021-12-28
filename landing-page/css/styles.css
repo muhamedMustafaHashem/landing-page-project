@@ -1,3 +1,4 @@
+
 /*
  *
  * CSS written based on SMACSS architecture.
@@ -62,10 +63,6 @@ section {
   min-height: 80vh;
 }
 
-a {
-  text-decoration: none;
-}
-
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
@@ -77,6 +74,7 @@ a {
 
 .navbar__menu li {
   display: inline-block;
+  cursor: pointer;
 }
 
 .navbar__menu .menu__link {
@@ -92,8 +90,10 @@ a {
   transition: ease 0.3s all;
 }
 
-li.your-active-class a {
-  text-decoration: underline;
+.menu__link.your-active-class {
+  color: #fff;
+
+  background-color: black;
 }
 
 /* Header Styles */
