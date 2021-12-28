@@ -39,17 +39,14 @@
 
 const buildNav = () => {
   const sectionsList = document.querySelectorAll("section"); //make  anode list if the sections
-  var domFragment = document.createDocumentFragment(); // Use  Dom fragmenmt to add li element single time insteded of adding it one by one .
+  let domFragment = document.createDocumentFragment(); // Use  Dom fragmenmt to add li element single time insteded of adding it one by one .
 
   // for loop to add the li and anchor  elements to the ul elemnt of the nav.
   for (let i = 0; i < sectionsList.length; i++) {
     const newLi = document.createElement("li");
     newLi.classList.add("menu__link");
     newLi.setAttribute("data-nav", `Section ${i + 1}`);
-    const sectionLink = document.createElement("a");
-    sectionLink.href = `#section${i + 1}`;
-    sectionLink.innerHTML = `section${i + 1}`;
-    newLi.appendChild(sectionLink);
+    newLi.innerText = "section" + (i + 1);
     domFragment.appendChild(newLi);
   }
   document.getElementById("navbar__list").appendChild(domFragment);
@@ -101,13 +98,9 @@ function SmoothScrollToSection() {
     (eventResponse = (clicked) => {
       clicked.preventDefault();
       const att = clicked.target.getAttribute("data-nav");
-      const att1 = clicked.target.getAttribute("href");
       // loop to add smoothscroll behavior to the section with same data attribute or of the same href attribute.
       document.querySelectorAll("section").forEach((section) => {
-        if (
-          section.getAttribute("data-nav") == att ||
-          "#" + section.id == att1
-        ) {
+        if (section.getAttribute("data-nav") == att) {
           section.scrollIntoView({ behavior: "smooth" });
         }
       });
