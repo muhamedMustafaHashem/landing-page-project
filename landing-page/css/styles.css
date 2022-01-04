@@ -84,16 +84,17 @@ section {
   color: #000;
 }
 
-.navbar__menu .menu__link:hover {
-  background: #333;
-  color: #fff;
-  transition: ease 0.3s all;
-}
-
 .menu__link.your-active-class {
   color: #fff;
-
   background-color: black;
+}
+
+@media (hover: hover) {
+  .navbar__menu .menu__link:hover {
+    background: black;
+    color: #fff;
+    transition: ease 0.3s all;
+  }
 }
 
 /* Header Styles */
